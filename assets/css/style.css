@@ -13,6 +13,10 @@
   padding: 0;
   box-sizing: border-box;
 }
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: var(--font_family) !important;
 }
@@ -315,4 +319,48 @@ footer {
 footer a {
   text-decoration: none;
   color: var(--blue-primary);
+}
+
+@media only screen and (max-width: 600px) {
+  /* Header Section */
+  header {
+    flex-direction: column;
+  }
+  header * {
+    margin-bottom: 5px;
+  }
+
+  /* Hero Section */
+  section.hero-section {
+    flex-direction: column;
+    padding: 40px;
+  }
+  /* About section */
+  section.about-section {
+    flex-direction: column;
+  }
+  .about-section-desc {
+    margin-left: 0;
+    margin-top: 30px;
+  }
+  /* work section */
+  .footer-section {
+    padding: 20px 10px;
+  }
+  .footer-section-items {
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer-section-box {
+    margin-bottom: 20px;
+    width: 100%;
+    margin-right: 0;
+  }
+  /* contact section */
+  .contact-section {
+    flex-direction: column;
+  }
+  .contact-section h4 {
+    margin-bottom: 20px;
+  }
 }
