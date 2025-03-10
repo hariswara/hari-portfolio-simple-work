@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Goudy+Bookletter+1911&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap");
 
 :root {
+  --font_family: "Nunito Sans", sans-serif;
   --dark-primary: #1b1f24;
   --blue-primary: #12bdff;
   --white-primary: #fff;
@@ -13,7 +14,7 @@
   box-sizing: border-box;
 }
 body {
-  font-family: "Nunito Sans", sans-serif; /* Example usage */
+  font-family: var(--font_family) !important;
 }
 
 /* header */
@@ -269,4 +270,49 @@ ul.social-icons {
 
 .footer-icon:hover {
   background-color: var(--blue-primary);
+}
+
+/* Contact Section */
+
+.contact-section {
+  background-color: var(--dark-about);
+  padding: 40px;
+  color: var(--white-primary);
+  text-align: center;
+}
+
+.contact-section h4 {
+  font-size: 30px;
+  margin: 20px 0;
+  font-weight: 900;
+}
+
+.contact-section h4 span {
+  color: var(--blue-primary);
+}
+
+.contact-section form div input,
+textarea {
+  padding: 8px 10px;
+  border-radius: 5px;
+  outline: none;
+  width: 350px;
+  border: none;
+  margin-bottom: 10px;
+  resize: none;
+  font-family: var(--font_family);
+}
+
+/* Footer Section */
+
+footer {
+  background-color: var(--dark-primary);
+  color: gray;
+  padding: 20px;
+  text-align: center;
+}
+
+footer a {
+  text-decoration: none;
+  color: var(--blue-primary);
 }
