@@ -360,10 +360,7 @@ footer a {
     margin-right: 0;
   }
   /* contact section */
-  .contact-section {
-    flex-direction: column;
-  }
-  .contact-section h4 {
-    margin-bottom: 20px;
+  .contact-section input textarea {
+    width: 100%;
   }
 }
